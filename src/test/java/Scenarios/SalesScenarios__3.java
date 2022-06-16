@@ -81,7 +81,7 @@ public class SalesScenarios__3 extends OpenPage {
 
         assertEquals("3", Elements.basketItemCountTD().getAttribute("innerHTML"),"The number of items entered in the basket does not match.");
         assertEquals("£0.00", Elements.basketDiscountTD().getAttribute("innerHTML"),"The discount price in the basket does not match.");
-        assertEquals("£21.50", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
+        assertEquals("£14.51", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
 
         Elements.cash10Screen().click();
 

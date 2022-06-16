@@ -65,8 +65,6 @@ public class SalesScenarios__4 extends OpenPage {
         assertEquals("none", Elements.ConfirmAgePopUp().getCssValue("display"),"The yes/no screen to confirm age did not close.");
 
 
-
-
         assertEquals("block", Elements.modal().getCssValue("display"),"The keyboard screen did not open to enter the price of the product.\n");
         Elements.fivePopUp().click();
         Elements.zeroPopUp().click();

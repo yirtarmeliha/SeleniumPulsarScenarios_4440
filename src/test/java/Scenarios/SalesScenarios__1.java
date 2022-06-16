@@ -87,7 +87,7 @@ public class SalesScenarios__1 extends OpenPage{
         Elements.SAVEmm().click();
 
                     try {
-                        Thread.sleep(700);
+                        Thread.sleep(1500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -177,7 +177,7 @@ public class SalesScenarios__1 extends OpenPage{
 
         assertEquals("5", Elements.basketItemCountTD().getAttribute("innerHTML"),"The number of items entered in the basket does not match.");
         assertEquals("£2.00", Elements.basketDiscountTD().getAttribute("innerHTML"),"The discount price in the basket does not match.");
-        assertEquals("£13.00", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
+        assertEquals("£6.01", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
 
 
         Elements.twoScreen().click();

@@ -331,7 +331,7 @@ public class SalesScenarios__6 extends OpenPage {
                         e.printStackTrace();
                     }
 
-
+                    
 
         Elements.create().click();
 

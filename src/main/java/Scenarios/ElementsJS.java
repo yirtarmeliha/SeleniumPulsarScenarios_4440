@@ -959,6 +959,20 @@ public class ElementsJS {
     }
 
 
+    public static void abcd_MainMonitor() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        js.executeScript(" $(\"span:contains('abcd')\").parent().click()");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+
 
 
 }
