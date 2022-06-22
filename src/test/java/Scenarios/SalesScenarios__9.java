@@ -58,7 +58,7 @@ public class SalesScenarios__9 extends OpenPage {
         ElementsJS.pointVegMenuCAPSLONGRED();
 
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -66,7 +66,7 @@ public class SalesScenarios__9 extends OpenPage {
         Elements.SAVEmm().click();
 
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -368,7 +368,7 @@ public class SalesScenarios__9 extends OpenPage {
         Elements.cash2Screen().click();
 
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

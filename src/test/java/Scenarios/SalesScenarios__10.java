@@ -22,8 +22,6 @@ public class SalesScenarios__10 extends OpenPage {
 
         Elements.fourScreen().click();
         Elements.xScreen().click();
-        ElementsJS.Butchery_MainMonitor();
-
 
                 try {
                     Thread.sleep(1000);
@@ -31,11 +29,27 @@ public class SalesScenarios__10 extends OpenPage {
                     e.printStackTrace();
                 }
 
+
+        ElementsJS.Butchery_MainMonitor();
+
+
+                try {
+                    Thread.sleep(700);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
         ElementsJS.abcd_MainMonitor();
+
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
         assertEquals("6", Elements.basketItemCountTD().getAttribute("innerHTML"),"The number of items entered in the basket does not match.");
         assertEquals("£0.00", Elements.basketDiscountTD().getAttribute("innerHTML"),"The discount price in the basket does not match.");
-        assertEquals("£7.15", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
+        assertEquals("£0.16", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
 
                 try {
                     Thread.sleep(500);
@@ -53,7 +67,7 @@ public class SalesScenarios__10 extends OpenPage {
 
 
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -153,7 +167,7 @@ public class SalesScenarios__10 extends OpenPage {
 
         assertEquals("890", Elements.basketItemCountTD().getAttribute("innerHTML"),"The number of items entered in the basket does not match.");
         assertEquals("£0.00", Elements.basketDiscountTD().getAttribute("innerHTML"),"The discount price in the basket does not match.");
-        assertEquals("£279.92", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
+        assertEquals("£98.18", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
 
 
         Elements.cardScreen().click();
@@ -207,7 +221,7 @@ public class SalesScenarios__10 extends OpenPage {
 
         assertEquals("12", Elements.basketItemCountTD().getAttribute("innerHTML"),"The number of items entered in the basket does not match.");
         assertEquals("£0.00", Elements.basketDiscountTD().getAttribute("innerHTML"),"The discount price in the basket does not match.");
-        assertEquals("£14.40", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
+        assertEquals("£0.42", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
 
                 try {
                     Thread.sleep(500);

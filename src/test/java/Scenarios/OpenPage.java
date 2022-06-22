@@ -20,7 +20,7 @@ public class OpenPage {
 
     @BeforeAll
     public void setUp() throws Exception{
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver 2");
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
         driver = new ChromeDriver();
         driver.get("http://pulsar.tills4u.com:4440/pulsar/dispatcher/pagenavi#/");
         driver.manage().window().maximize();
