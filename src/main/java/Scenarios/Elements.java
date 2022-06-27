@@ -106,6 +106,9 @@ public class Elements {
     public static WebElement enterCode(){
         return driver.findElement(new By.ByCssSelector(".col-xs-6[translate=\"ENTER_CODE_LB\"]"));
     }
+    public static WebElement changeClerk(){
+        return driver.findElement(new By.ByCssSelector(".col-xs-6[data-translate=\"CHANGE_CLERK_LB\"]"));
+    }
 
 
 

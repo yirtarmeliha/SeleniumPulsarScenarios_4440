@@ -21,17 +21,6 @@ public class SalesScenarios__11 extends OpenPage {
                     e.printStackTrace();
                 }
 
-        Elements.singOnOff().click();
-            for (WebElement webElement : Arrays.asList(Elements.threePopUp(), Elements.enterPopUp())) {
-                webElement.click();
-            }
-
-
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
 
         ElementsJS.cigaretteOrTobacco_MainMonitor();
 
@@ -159,17 +148,9 @@ public class SalesScenarios__11 extends OpenPage {
 
         Elements.functions().click();
 
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
 
 
-        Elements.singOnOff().click();
-            for (WebElement webElement : Arrays.asList(Elements.twoPopUp(), Elements.enterPopUp())) {
-                webElement.click();
-            }
+
 
                 try {
                     Thread.sleep(2000);
@@ -278,18 +259,6 @@ public class SalesScenarios__11 extends OpenPage {
 
         Elements.Cscreen().click();
 
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-
-
-        Elements.singOnOff().click();
-            for (WebElement webElement : Arrays.asList(Elements.onePopUp(), Elements.enterPopUp())) {
-                webElement.click();
-            }
 
 
                 try {
