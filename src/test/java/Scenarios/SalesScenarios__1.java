@@ -63,7 +63,7 @@ public class SalesScenarios__1 extends OpenPage{
         Elements.MixandMacthcurrentRewardAmount().sendKeys("£6.00");
 
                     try {
-                        Thread.sleep(700);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -71,7 +71,7 @@ public class SalesScenarios__1 extends OpenPage{
         Elements.MixandMacthSubmenuProduct().sendKeys("LEMON");
 
                     try {
-                        Thread.sleep(700);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -79,7 +79,7 @@ public class SalesScenarios__1 extends OpenPage{
         ElementsJS.pointFruitMenuLEMON();
 
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(1500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -87,7 +87,7 @@ public class SalesScenarios__1 extends OpenPage{
         Elements.SAVEmm().click();
 
                     try {
-                        Thread.sleep(1500);
+                        Thread.sleep(2500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

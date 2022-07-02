@@ -1035,5 +1035,22 @@ public class ElementsJS {
 
 
 
+
+    public static void FruitVeg_MainMonitor() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        js.executeScript(" $(\"span:contains('Fruit&Veg')\").filter(function(){ return $(this).text() == 'Fruit&Veg'; }).parent().click()");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
+
 }
 
