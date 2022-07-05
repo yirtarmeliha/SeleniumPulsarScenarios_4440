@@ -460,6 +460,25 @@ public class ElementsJS {
         }
     }
 
+
+    public static void pointFruitMenuLemonSweet() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        js.executeScript(" $(\"span:contains('Lemon Sweet')\").filter(function(){ return $(this).text() == 'Lemon Sweet'; }).parent().click()");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
+
+
+
     public static void pointFruitMenuAPPLEGREEN1kg() {
         try {
             Thread.sleep(2000);
@@ -1049,6 +1068,31 @@ public class ElementsJS {
             ex.printStackTrace();
         }
     }
+
+
+
+    public static void ManualWeight_MainMonitor() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        js.executeScript(" $(\"span:contains('Manual')\").parent().click()\n");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 
 

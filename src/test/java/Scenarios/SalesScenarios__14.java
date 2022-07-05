@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SalesScenarios__14 extends OpenPage {
 
 
-    @DisplayName("Scenario 13")
+    @DisplayName("Scenario 14")
     @Test
     void ScenarioFOURTEEN() {
 
