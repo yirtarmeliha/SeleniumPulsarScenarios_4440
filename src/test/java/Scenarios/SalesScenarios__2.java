@@ -94,7 +94,7 @@ public class SalesScenarios__2 extends OpenPage{
         Elements.SAVEmm().click();
 
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(2000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
