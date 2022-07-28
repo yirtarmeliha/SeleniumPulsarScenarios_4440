@@ -346,6 +346,76 @@ public class SalesScenarios__2 extends OpenPage{
                         e.printStackTrace();
                     }
 
+
+
+
+        ElementsJS.grocery_MainMonitor();
+        assertEquals("block", Elements.modal().getCssValue("display"),"The keyboard screen did not open to enter the price of the product.");
+
+        Elements.zeroPopUp().click();
+        Elements.sevenPopUp().click();
+        assertEquals("07", Elements.keypadModalClass().getAttribute("value"),"The numbers entered on the keyboard screen that opens do not match.");
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Elements.enterPopUp().click();
+        assertEquals("none", Elements.modal().getCssValue("display"),"The keyboard screen that opens to enter the price of the product is not closed.");
+
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+        ElementsJS.Butchery_MainMonitor();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        assertEquals("block", Elements.modal().getCssValue("display"),"The keyboard screen did not open to enter the price of the product.");
+        Elements.zeroPopUp().click();
+        Elements.threePopUp().click();
+        assertEquals("03", Elements.keypadModalClass().getAttribute("value"),"The numbers entered on the keyboard screen that opens do not match.");
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Elements.enterPopUp().click();
+        assertEquals("none", Elements.modal().getCssValue("display"),"The keyboard screen that opens to enter the price of the product is not closed.");
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+        assertEquals("8", Elements.basketItemCountTD().getAttribute("innerHTML"),"The number of items entered in the basket does not match.");
+        assertEquals("£10.00", Elements.basketDiscountTD().getAttribute("innerHTML"),"The discount price in the basket does not match.");
+        assertEquals("£32.10", Elements.basketSubtotalTD().getAttribute("innerHTML"),"The total price in the basket does not match.");
+
+
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+
         Elements.cardScreen().click();
         assertEquals("block", Elements.StartcardtransactionYesNo().getCssValue("display"),"The yes/no screen to start card transaction did not pop up.\n");
         Elements.StartcardtransactionYes().click();
