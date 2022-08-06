@@ -1,6 +1,7 @@
 package Scenarios;
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +21,8 @@ public class OpenPage {
 
     @BeforeAll
     public void setUp() throws Exception{
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+      //  System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("http://pulsar.tills4u.com:4440/pulsar/dispatcher/pagenavi#/");
         driver.manage().window().maximize();
